@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'Reels.dart';
 import 'profile.dart';
-import 'package:flutter_insta/flutter_insta.dart';
 
 class ReelsDownloader extends StatefulWidget {
   @override
@@ -14,6 +13,12 @@ class _ReelsDownloaderState extends State<ReelsDownloader> {
     return Scaffold(
       backgroundColor: Color(0xffffffff),
       body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topRight,
+                end: Alignment.bottomLeft,
+                stops: [0.1, 0.6, 0.9],
+                colors: [Color(0xffFF9933), Colors.white, Color(0xff128807)])),
         alignment: Alignment.bottomCenter,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20),
